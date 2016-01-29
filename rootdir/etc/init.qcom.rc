@@ -29,7 +29,7 @@
 import init.qcom.usb.rc
 
 on early-init
-    export LD_SHIM_LIBS "/system/lib/libril.so|libshim_ril.so:/system/lib/liblog.so|libshim_log.so:/system/lib/hw/camera.msm8226.so|libcam.so:/system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so"
+    export LD_SHIM_LIBS "/system/lib/libril.so|libshim_ril.so:/system/lib/liblog.so|libshim_log.so:/system/lib/hw/camera.msm8226.so|libcam.so:/system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so:/system/bin/rmt_storage|libshim_rmt_storage.so"
     export LD_PRELOAD "/system/lib/libxml2.so"
 
     mount debugfs debugfs /sys/kernel/debug

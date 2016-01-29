@@ -193,7 +193,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcam \
     libshim_ril \
-    libshim_log
+    libshim_log \
+    libshim_rmt_storage
 
 # SSL Compat
 PRODUCT_PACKAGES += \

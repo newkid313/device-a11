@@ -35,3 +35,14 @@ LOCAL_MODULE := libshim_ril
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 
 include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+
+LOCAL_SRC_FILES := \
+     htc_ioprio.c
+
+LOCAL_MODULE := libshim_rmt_storage
+LOCAL_MODULE_TAGS := optional
+
+include $(BUILD_SHARED_LIBRARY)
+
