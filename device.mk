@@ -88,8 +88,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml
 
 # Camera
-# PRODUCT_PACKAGES += \
-#    camera.msm8226
+PRODUCT_PACKAGES += \
+    camera.msm8226 \
+    libxml2
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
@@ -161,6 +162,11 @@ PRODUCT_COPY_FILES += \
 #    com.android.nfc_extras \
 #    nfc_nci.pn54x.default
 
+# http://b/15193147
+# TODO(danalbert): Remove this once stlport is dead and gone.
+PRODUCT_PACKAGES += \
+    libstlport
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
@@ -182,6 +188,16 @@ PRODUCT_BOOT_JARS += \
 # Power
 PRODUCT_PACKAGES += \
     power.msm8226
+
+# Shims
+PRODUCT_PACKAGES += \
+    libcam \
+    libshim_ril \
+    libshim_log
+
+# SSL Compat
+PRODUCT_PACKAGES += \
+    libboringssl-compat
 
 # Thermal
 PRODUCT_COPY_FILES += \

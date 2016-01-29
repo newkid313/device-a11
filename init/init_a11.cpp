@@ -87,8 +87,6 @@ void vendor_load_properties()
     if (strstr(bootmid, "0PCV1000")) {
         /* a11chl */
         cdma_properties("1", "8", "310120", "Sprint");
-        property_set("ro.build.fingerprint", "htc/sprint_wwe_vm/htc_a11chl:4.4.2/KOT49H/338737.1:user/release-keys");
-        property_set("ro.build.description", "1.13.652.1 CL338737 release-keys");
         property_set("ro.product.model", "HTC Desire 510");
         property_set("ro.product.device", "a11chl");
         property_set("ro.build.product", "a11chl");
@@ -98,8 +96,6 @@ void vendor_load_properties()
     } else if (strstr(bootmid, "0PCV2000")) {
         /* a11chl */
         cdma_properties("1", "8", "310120", "Boost Mobile");
-        property_set("ro.build.fingerprint", "htc/Boost_wwe/htc_a11chl:4.4.2/KOT49H/338737.1:user/release-keys");
-        property_set("ro.build.description", "1.13.652.1 CL338737 release-keys");
         property_set("ro.product.model", "HTC Desire 510");
         property_set("ro.product.device", "a11chl");
         property_set("ro.build.product", "a11chl");
@@ -109,8 +105,6 @@ void vendor_load_properties()
     } else {
         /* a11ul */
         gsm_properties("9");
-        property_set("ro.build.fingerprint", "htc/aio_wireless_us/htc_a11ul8x26:4.4.2/KOT49H/374695.1:user/release-keys");
-        property_set("ro.build.description", "1.10.506.1 CL374695 release-keys");
         property_set("ro.product.model", "HTC Desire 510");
         property_set("ro.product.device", "a11ul");
         property_set("ro.build.product", "a11ul");
