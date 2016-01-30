@@ -68,4 +68,3 @@ void libEvtUnloading(void)
 {
     ALOGV("libbinder interposition library unloading. Goodbye...");
 }
-

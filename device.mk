@@ -69,6 +69,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     audiod \
     audio.a2dp.default \
+    audio_amplifier.msm8226 \
     audio.primary.msm8226 \
     audio.r_submix.default \
     audio.usb.default
@@ -188,6 +189,11 @@ PRODUCT_BOOT_JARS += \
 # Power
 PRODUCT_PACKAGES += \
     power.msm8226
+
+# RIL
+PRODUCT_PACKAGES += \
+    libril \
+    libhtc_ril
 
 # Shims
 PRODUCT_PACKAGES += \
